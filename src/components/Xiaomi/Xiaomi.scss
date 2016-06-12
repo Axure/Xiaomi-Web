@@ -1,0 +1,51 @@
+.xiaomi {
+  color: red;
+  font-size: 30px;
+  width: 540px;
+  margin: auto;
+  border: 1px solid black;
+  height: 960px;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrollContainer {
+  width: 100%;
+  height: 960px;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.banner {
+
+}
+
+$button_radius: 20px;
+
+.circularButton {
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 0;
+  height: 2 * $button_radius;
+  width: 2 * $button_radius;
+  border-radius: $button_radius;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover, &:active {
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+}
+
